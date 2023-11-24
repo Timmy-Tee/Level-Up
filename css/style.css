@@ -1,0 +1,229 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: inter;
+}
+
+:root{
+    --bg-color: #F1F1F1;
+    --nav-bg:   #1A1A1A;
+    --text-color: #E3E3E3;
+    --input-stroke: #616161; 
+    --input-bg:     #303030;    
+    --input-color: #B5B5B5;  
+    --user-letter-color: #36FBA1;
+    --user-text-color: #E3E3E3;
+    --dark-text-color: #000000;
+}
+
+body{
+    background: var(--bg-color);
+}
+nav{
+    padding: 15px;
+    background: var(--nav-bg);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3,1fr);
+    color: var(--text-color)
+}
+
+#small{
+    display: none;
+}
+.search{
+    border: 1px solid var(--input-stroke);
+    background: var(--input-bg);
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+.search img{
+    /* border: 1px solid; */
+    padding: 5px;
+    color: var(--input-color);
+    width: 13px;
+    height: 13px;
+    text-align: center;
+    flex-basis: 7%;
+}
+.search #search{
+    flex-basis: 100%;
+    outline: none;
+    color: var(--text-color);
+    border: none;
+    padding: 10px 0px; 
+    background: transparent;
+}
+#search::placeholder{
+    line-height: 18.2px;
+    color: var(--input-color);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid; */
+    /* padding: 5px; */
+    color: var(--user-text-color);
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.user img{
+    background: var(--input-bg);
+    padding: 10px;
+    width: 17px;
+    height: 17px;
+    border-radius: 8px;
+}
+.user #user_details{
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    background: var(--input-bg);
+    padding: 10px 2px 10px 10px;
+}
+.user #green{
+    background: var(--user-letter-color);
+    padding: 8px;
+    margin-left: 3px;
+    /* font-size: 12px; */
+    color: var(--dark-text-color);
+    border-radius: 8px;
+}
+
+
+
+
+
+.body{
+    border: 1px solid;
+    height: 89vh;
+    display: flex;
+    place-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.body .plan{
+    border: 1px solid;
+    width: 70%;
+    position: fixed;
+    top: 15%;
+    color: var(--text-color);
+    background: var(--nav-bg);
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.plan_btn{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-basis: 20%;
+    /* border: 1px solid; */
+    justify-content: space-evenly;
+}
+
+.plan_btn button{
+    padding: 6px 12px;
+    border-radius: 6px;
+    outline: none;
+    font-family: inter;
+    font-weight: 700;
+    border: 1px;
+    background: #fff;
+    color: var(--dark-text-color);
+}
+.plan_btn img{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+
+
+
+
+details{
+    border: 1px solid #DBDBDB;
+    position: fixed;
+    top: 27%;
+    width: 70%;
+    padding: 15px;
+    border-radius: 18px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    transition: 0.6s ease-in-out;
+}
+details summary{
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+    /* border: 1px solid; */
+    padding: 10px;
+    color: var(--input-bg);
+}
+details summary #title{
+    line-height: 19px;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+}
+
+details summary::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f107";
+    font-weight: bolder;
+    position: absolute;
+    color: #4A4A4A;
+    right: 0;
+}
+
+details[open] summary::before { 
+    content:"\f106"; 
+}
+
+.summary_content{
+    /* border: 1px solid; */
+    padding: 10px;
+}
+
+
+.progress{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    position: relative;
+}
+.progress p{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--input-bg);
+}
+
+.progress-bar{
+    width: 72px;
+    height: 5px;
+    border-radius: 50px;
+    background: var(--text-color);
+    overflow: hidden;
+}
+#skill_bar{
+    background: var(--nav-bg);
+    height: 100%;
+    border-radius: 50px 0px 0px 50px ;
+    width: 20%;
+}

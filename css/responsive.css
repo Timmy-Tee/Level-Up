@@ -1,0 +1,67 @@
+@media (max-width: 840px){
+    #big{
+        display: none;
+    }
+    #small{
+        display: flex;
+    }
+    #username{
+        display: none;
+    }
+    .user #user_details{
+        padding: 0px 0px 0px 0px;
+    }
+    .user #green{
+        margin-left: 0px;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .search{
+        flex-basis: 60%;
+    }
+
+    .body .plan{
+        width: 95%;
+        /* padding: 9px; */
+        flex-direction: column;
+    }
+    .plan_btn{
+        width: 95%;
+        margin-top: 10px;
+        padding: 5px;
+        justify-content: space-between;
+        /* border: 1px solid; */
+    }
+    
+    details{
+        width: 94%;
+        /* padding: 9px; */
+        top: 34%;
+    }
+    
+}
+
+
+@media (max-width: 450px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    details{
+        top: 35%;
+    }
+
+    .user{
+        justify-content: space-between;
+    }
+    
+    .search{
+        width: 20%;
+    }
+    .plan p{
+        font-size: 12px;
+    }
+}
