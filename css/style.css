@@ -17,6 +17,8 @@
     --user-letter-color: #36FBA1;
     --user-text-color: #E3E3E3;
     --dark-text-color: #000000;
+    --btn-bg:           #404040;
+    --product-bg:       #F3F3F3;
 }
 
 body{
@@ -106,7 +108,6 @@ nav{
 
 .body{
     border: 1px solid;
-    height: 89vh;
     display: flex;
     place-content: center;
     flex-direction: column;
@@ -145,6 +146,10 @@ nav{
     border: 1px;
     background: #fff;
     color: var(--dark-text-color);
+    cursor: pointer;
+}
+.plan_btn button:hover{
+    background: #F7F7F7;
 }
 .plan_btn img{
     width: 15px;
@@ -156,8 +161,9 @@ nav{
 
 
 
-details{
+#main_details{
     border: 1px solid #DBDBDB;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.05);
     position: fixed;
     top: 27%;
     width: 70%;
@@ -168,7 +174,7 @@ details{
     align-items: center;
     transition: 0.6s ease-in-out;
 }
-details summary{
+#main_details summary{
     list-style: none;
     position: relative;
     cursor: pointer;
@@ -182,7 +188,7 @@ details summary #title{
     font-weight: 600;
 }
 
-details summary::before{
+#main_details summary::before{
     font-family: "Font Awesome 5 Free";
     content: "\f107";
     font-weight: bolder;
@@ -191,13 +197,13 @@ details summary::before{
     right: 0;
 }
 
-details[open] summary::before { 
+#main_details[open] #main_summary::before { 
     content:"\f106"; 
 }
 
 .summary_content{
     /* border: 1px solid; */
-    padding: 10px;
+    padding: 5px;
 }
 
 
@@ -226,4 +232,153 @@ details[open] summary::before {
     height: 100%;
     border-radius: 50px 0px 0px 50px ;
     width: 20%;
+}
+
+label{
+    position: relative;
+    width: 100%;
+    max-width: 24px;
+    height: 24px;
+    cursor: pointer;
+    flex-grow: 1;
+  }
+  label:focus{
+    outline: none;
+    border: none;
+  }
+  label input{
+    display: none;
+  }
+input + span > svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  input + span > svg{
+    opacity: 0;
+  }
+  input + span > svg:nth-of-type(1){
+    animation-name: checkSvgAnimation;
+    animation-duration: 70ms;
+    animation-timing-function: linear;
+    opacity: 1;
+  }
+  input + span:hover > svg:nth-of-type(2){
+    opacity: 1;
+  }
+  input:focus > span > svg:nth-of-type(5){
+    opacity: 1;
+  }
+  input:checked + span > svg{
+    animation-name: checkSvgAnimation;
+    animation-duration: 100ms;
+    animation-fill-mode: both;
+  }
+  input:checked + span > svg:nth-of-type(1){
+    opacity: 0;
+  }
+  input:checked + span > svg:nth-of-type(2){
+    animation-delay: 50ms;
+  }
+  input:checked + span > svg:nth-of-type(3){
+    animation-delay: 150ms;
+  }
+  input:checked + span > svg:nth-of-type(4){
+    animation-delay: 230ms;
+  }
+  input:checked + span > svg:nth-of-type(5){
+    animation-delay: 300ms;
+  }
+  input:checked + span > svg:nth-of-type(6){
+    animation-delay: 380ms;
+  }
+  input:checked + span > svg:nth-of-type(7){
+    animation-delay: 450ms;
+  }
+  input:checked + span > svg:nth-of-type(8){
+    animation-delay: 520ms;
+  }
+  input:checked + span > svg:nth-of-type(9){
+    animation-delay: 600ms;
+  }
+  input:checked + span > svg:nth-of-type(10){
+    animation-delay: 700ms;
+    opacity: 1;
+  }
+  @keyframes checkSvgAnimation {
+     0% {
+      opacity: 0;
+     } 
+     50% {
+      opacity: 1;
+     } 
+     100%{
+      opacity: 1;
+     } 
+  }
+
+
+
+
+.prod1{
+    /* padding: 10px; */
+}
+#prod1[open]{
+    background: var(--product-bg);
+    border-radius: 10px;
+}
+
+#prod1 summary{
+    /* border: 1px solid red; */
+    /* width: 100%;    */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+#prod1 summary::before{
+    display: none;
+}
+
+#prod1 summary p{
+    color: #322F33;
+}
+
+#prod1[open] summary p{
+    font-weight: bolder;
+}
+
+
+
+.inner_content{
+    /* border: 1px solid green; */
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.inner_content img{
+    width: 154px;
+}
+.inner_text{
+    /* border: 1px solid;  */
+}
+.inner_text p{
+    line-height: 1.5rem;
+}
+.inner_text a{
+    color: #005BD3;
+    /* font-size: 14px; */
+    font-weight: 500;
+    text-decoration: none;
+}
+.inner_text button{
+   padding: 8px 10px;
+   outline: none;
+   border: none;
+   font-weight: 500;
+   color: #fff;
+   border-radius: 6px;
+   background: var(--btn-bg);
 }
