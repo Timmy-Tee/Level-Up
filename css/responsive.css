@@ -25,6 +25,7 @@
 
     .body .plan{
         width: 95%;
+        top: 12%;
         /* padding: 9px; */
         flex-direction: column;
     }
@@ -38,8 +39,9 @@
     
     #main_details{
         width: 94%;
+        margin-top: 10px;
         /* padding: 9px; */
-        top: 34%;
+        /* top: 34%; */
     }
     
 }
@@ -51,7 +53,7 @@
         justify-content: space-between;
     }
     details{
-        top: 35%;
+        /* top: 35%; */
     }
 
     .user{
