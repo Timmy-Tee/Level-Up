@@ -46,6 +46,14 @@
     
 }
 
+@media(max-width: 650px){
+    .inner_content img{
+        display: none;
+    }
+    .inner_text{
+        padding: 15px;
+    }
+}
 
 @media (max-width: 450px){
     nav{
