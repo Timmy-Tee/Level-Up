@@ -19,6 +19,7 @@
     --dark-text-color: #000000;
     --btn-bg:           #404040;
     --product-bg:       #F3F3F3;
+    --btn-hover-bg:     #F7F7F7;
 }
 
 body{
@@ -117,7 +118,7 @@ nav{
 .body .plan{
     border: 1px solid;
     width: 70%;
-    position: fixed;
+    position: absolute;
     top: 15%;
     color: var(--text-color);
     background: var(--nav-bg);
@@ -149,7 +150,7 @@ nav{
     cursor: pointer;
 }
 .plan_btn button:hover{
-    background: #F7F7F7;
+    background: var(--btn-hover-bg);
 }
 .plan_btn img{
     width: 15px;
@@ -164,7 +165,7 @@ nav{
 #main_details{
     border: 1px solid #DBDBDB;
     box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.05);
-    position: fixed;
+    position: absolute;
     top: 27%;
     width: 70%;
     padding: 15px;
@@ -366,6 +367,7 @@ input + span > svg{
 }
 .inner_text p{
     line-height: 1.5rem;
+    color: #616161;
 }
 .inner_text a{
     color: #005BD3;
@@ -378,7 +380,12 @@ input + span > svg{
    outline: none;
    border: none;
    font-weight: 500;
-   color: #fff;
    border-radius: 6px;
-   background: var(--btn-bg);
+}
+.inner_text button:hover{
+    background: var(--btn-hover-bg);
+}
+#active_btn{
+    background: var(--btn-bg);
+   color: #fff;
 }
