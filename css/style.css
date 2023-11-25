@@ -35,7 +35,7 @@ nav{
     color: var(--text-color)
 }
 
-#small{
+#small_logo{
     display: none;
 }
 .search{
@@ -46,12 +46,13 @@ nav{
     border-radius: 8px;
 }
 .search img{
-    /* border: 1px solid; */
     padding: 5px;
     color: var(--input-color);
     width: 13px;
     height: 13px;
+    padding: 10px;
     text-align: center;
+    cursor: pointer;
     flex-basis: 7%;
 }
 .search #search{
@@ -68,6 +69,13 @@ nav{
     font-weight: 500;
     font-size: 14px;
 }
+.search:hover{
+    border: 1px solid #E1E1E1;
+}
+#focus{
+    border: 2px solid #FFFFFF;
+}
+
 
 .user{
     display: flex;
@@ -86,7 +94,7 @@ nav{
     height: 17px;
     border-radius: 8px;
 }
-.user #user_details{
+ #user_details{
     font-size: 13px;
     line-height: 18px;
     font-weight: 500;
@@ -94,7 +102,7 @@ nav{
     background: var(--input-bg);
     padding: 10px 2px 10px 10px;
 }
-.user #green{
+ #green{
     background: var(--user-letter-color);
     padding: 8px;
     margin-left: 3px;
@@ -388,4 +396,134 @@ input + span > svg{
 #active_btn{
     background: var(--btn-bg);
    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Drop Down Icon */
+.user_drop{
+    border: 1px solid #DBDBDB;
+    background: #fff;
+    border-radius: 14px;
+    position: absolute;
+    right: 7px;
+    top: 12%;
+    width: 25%;
+    color: var(--input-bg);
+    z-index: 5;
+    display: none;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+.user_drop #dropdown_user i{
+    right: 5%;
+    position: absolute;
+}
+.user_drop #username{
+    font-size: 13px;
+    color: var(--input-bg);
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+}
+.user_drop #dropdown_user{
+    padding: 5px;
+    margin: 5px;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    background: var(--bg-color);
+    border-radius: 8px;
+}
+.user_drop #green{
+    font-size: 12px;
+}
+ul{
+    border: 1px solid #E1E1E1;
+    border-left: none;
+    border-right: none;
+    width: auto;
+}
+ul li, #store{
+    font-size: 14px;
+    list-style: none;
+    /* border: 1px solid; */
+    padding: 12px;
+}
+#store{
+    display: flex;
+    align-items: center;
+}
+#store img{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+#logout{
+    border: none;
+}
+#logout li span{
+    font-size: 11px;
+}
+/* User Dropdown */
+
+
+/* Notification */
+.notification{
+    border: 1px solid #DBDBDB;
+    background: #fff;
+    border-radius: 14px;
+    position: absolute;
+    right: 7px;
+    top: 12%;
+    width: 33%;
+    padding: 16px;
+    z-index: 5;
+    display: none;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top_section{
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.top_section p{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--input-bg);
+}
+.top_section .notification_icons{
+    display: flex;
+    align-items: center;
+    place-content: center;
+    gap: 30px;
+}
+.top_section .notification_icons img{
+    width: 17px;
+    height: 17px;
+}
+
+.text_section{
+    background: var(--bg-color);
+    text-align: center;
+    padding: 16px;
+    color: var(--input-stroke);
+}
+.text_section p{
+    font-weight: 500;
 }
