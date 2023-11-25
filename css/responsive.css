@@ -44,7 +44,7 @@
     
 }
 
-@media(max-width: 650px){
+@media(max-width: 850px){
     .inner_content img{
         display: none;
     }
@@ -58,7 +58,7 @@
         margin: 0;
     }
     .notification{
-        width: 90%;
+        width: 88%;
     }
 }
 

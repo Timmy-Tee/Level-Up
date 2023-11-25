@@ -26,28 +26,28 @@
 
        <div class="search">
         <img src="image/search.svg" alt="">
-        <input type="text" name="search" id="search" placeholder="Search">
+        <input type="text" name="search" id="search" placeholder="Search" autocomplete="off">
        </div>
         
         <div class="user">
-            <img src="image/bell.svg" alt="">
+            <img src="image/bell.svg" alt="" id="bell">
 
-            <p id="user_details"><span id="username">Davii Collections</span> <span id="green">DC</span></p>
+            <p id="user_details"><span id="username">Davii Collections</span> <button><span id="green"></span>DC</span></button></p>
         </div>
 
         <!-- User Dropdown Details -->
         <div class="user_drop" id="user_drop">
-          <p id="dropdown_user"><span id="green">DC</span> <span id="username">Davii Collections</span> 
-          
+          <p id="dropdown_user"><button><span id="green">DC</span></button> <span id="username">Davii Collections</span> 
             <i class="fa fa-check"></i>
           </p>
-          <p id="store"> <img src="image/Icon.svg" alt="">All stores</p>
+          <a href="https://admin.shopify.com/"><p id="store"> <img src="image/Icon.svg" alt="">All stores</p></a> 
+
           <ul>
-            <li>Help Center</li>
-            <li>Changelog</li>
-            <li>Community forums</li>
-            <li>Hire a Shopify Partner</li>
-            <li>Keyboard Shortcuts</li>
+            <li><a href="https://admin.shopify.com/">Help Center</a></li>
+            <li><a href="https://admin.shopify.com/">Changelog</a></li>
+            <li><a href="https://admin.shopify.com/">Community forums</a></li>
+            <li><a href="https://admin.shopify.com/">Hire a Shopify Partner</a></li>
+            <li><a href="https://admin.shopify.com/">Keyboard Shortcuts</a></li>
           </ul>
           <ul id="logout">
             <li>David Micheal <br> <span>davidmicheal@gmail.com</span></li>
@@ -59,7 +59,7 @@
 
 
         <!-- Notification -->
-          <div class="notification">
+          <div class="notification" id="notification">
             
             <div class="top_section">
               <p>Alerts</p>
@@ -90,7 +90,7 @@
             <p>Extend your trial for $1/month for 3 months on select plans.</p>
 
             <div class="plan_btn">
-                <button>Select a plan</button>
+                <a href="https://shopify.com/pricing">Select a plan</a>
 
                 <img src="image/cross.svg" alt="" id="cross">
             </div>
@@ -119,7 +119,7 @@
                   <!--  -->
                   <details id="prod1">
                     <summary>
-                        <label>
+                        <label id="circle">
                             <input type='checkbox' />
                             <span>
                                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -180,7 +180,7 @@
                   <!--  -->
                   <details id="prod1">
                     <summary>
-                        <label>
+                        <label id="circle">
                             <input type='checkbox' />
                             <span>
                                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -242,8 +242,8 @@
                   <!--  -->
                   <details id="prod1">
                     <summary>
-                        <label>
-                            <input type='checkbox' />
+                        <label id="circle">
+                            <input type='checkbox'/>
                             <span>
                                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="12" cy="12" r="10" stroke="#8A8A8A" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
@@ -304,8 +304,8 @@
                   <!--  -->
                   <details id="prod1">
                     <summary>
-                        <label>
-                            <input type='checkbox' />
+                        <label id="circle">
+                            <input type='checkbox'/>
                             <span>
                                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="12" cy="12" r="10" stroke="#8A8A8A" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
@@ -365,8 +365,8 @@
                   <!--  -->
                   <details id="prod1">
                     <summary>
-                        <label>
-                            <input type='checkbox' />
+                        <label id="circle">
+                            <input type='checkbox'/>
                             <span>
                                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="12" cy="12" r="10" stroke="#8A8A8A" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
@@ -390,13 +390,10 @@
                                 </g>
                               </svg>
                               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="11.9996" cy="12" r="10" fill="#1C181D" stroke="#1C181D" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle id="filled" cx="11.9996" cy="12" r="10" fill="#1C181D" stroke="#1C181D" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8163 8.64149C17.0604 8.88557 17.0604 9.2813 16.8163 9.52538L11.3997 14.942C11.1556 15.1861 10.7599 15.1861 10.5158 14.942L7.80745 12.2337C7.56337 11.9896 7.56337 11.5939 7.80745 11.3498C8.05153 11.1057 8.44725 11.1057 8.69133 11.3498L10.9577 13.6162L15.9324 8.64149C16.1765 8.39742 16.5723 8.39742 16.8163 8.64149Z" fill="white"/>
                               </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="11.9996" cy="12" r="10" fill="#1C181D" stroke="#1C181D" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8162 8.64149C17.0603 8.88557 17.0603 9.2813 16.8162 9.52538L11.3995 14.942C11.1555 15.1861 10.7597 15.1861 10.5157 14.942L7.80733 12.2337C7.56325 11.9896 7.56325 11.5939 7.80733 11.3498C8.0514 11.1057 8.44713 11.1057 8.69121 11.3498L10.9576 13.6162L15.9323 8.64149C16.1764 8.39742 16.5721 8.39742 16.8162 8.64149Z" fill="white"/>
-                              </svg>
+                            
                             </span>
                           </label>
 
