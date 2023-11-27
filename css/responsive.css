@@ -82,6 +82,13 @@
         /* top: 35%; */
     }
 
+    #main_details{
+        width: 90%;
+        /* margin-top: 17px; */
+        /* padding: 9px; */
+        top: 25%;
+    }
+    
     .user{
         justify-content: space-between;
     }

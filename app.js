@@ -66,6 +66,16 @@ function mychecked(){
         if(circles[i].checked){
             width += checkListProgressInterval;
             count += 1;
+
+            if(count < details.length){
+                details[(count)].setAttribute('open', 'open');
+                console.log(count, i+2)
+                if(count > 1 && count > i){
+
+                    details[(i)].removeAttribute('open');
+                }
+
+            }
         }
     }
     success_count.innerHTML = count

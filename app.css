@@ -51,7 +51,7 @@ nav{
     border: 2px solid #FFF;
     background:  var(--input-bg);
 }
-.search img{
+.search i{
     padding: 5px;
     color: var(--input-color);
     border: none;
@@ -663,4 +663,109 @@ ul a li:active{
 }
 .text_section p{
     font-weight: 500;
+}
+
+
+
+
+
+
+@media(max-width: 1104px){
+    .body .plan{
+        top: 20%
+    }
+    #main_details{
+        top: 41%
+    }
+}
+
+
+@media (max-width: 910px){
+    #big{
+        display: none;
+    }
+    #small_logo{
+        display: flex;
+    }
+    #username{
+        display: none;
+    }
+    .user #user_details p{
+        padding: 7px 0px 7px 0px;
+    }
+    #user_details #green{
+        margin-left: 0px;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .search{
+        flex-basis: 60%;
+    }
+
+    .body .plan{
+        width: 90%;
+        top: 12%;
+        flex-direction: column;
+    }
+    .plan_btn{
+        width: 95%;
+        margin-top: 10px;
+        padding: 5px;
+        justify-content: space-between;
+    }
+    
+    #main_details{
+        width: 90%;
+        margin-top: 17px;
+        top: 28%;
+    }
+    
+}
+
+@media(max-width: 850px){
+    .inner_content img{
+        display: none;
+    }
+    .inner_text{
+        padding: 15px;
+    }
+    .user_drop{
+        width: 80%;
+    }
+    .user_drop #dropdown_user{
+        margin: 0;
+    }
+    .notification{
+        width: 89%;
+    }
+}
+
+@media (max-width: 450px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #main_details{
+        width: 90%;
+        top: 25%;
+    }
+    
+    .user{
+        justify-content: space-between;
+    }
+    
+    .search{
+        width: 20%;
+    }
+    .plan p{
+        font-size: 12px;
+    }
+    .text_section p{
+        font-size: 13px;
+    }
+    
 }
