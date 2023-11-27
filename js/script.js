@@ -5,10 +5,6 @@ cross.addEventListener('click', ()=>{
     plan.style.display="none"
 })
 
-
-
-
-
 let details = document.querySelectorAll("#prod1")
 
 details.forEach((detailTag)=>{
@@ -20,7 +16,6 @@ details.forEach((detailTag)=>{
         })
     })
 })
-
 
 
 // User Info drop down
@@ -35,8 +30,6 @@ let a = 0;
 
 let flex = "flex";
 let none = "none";
-
-
 
 userDetails.addEventListener('click', ()=>{
     a += 1
@@ -58,11 +51,6 @@ userBellIcon.addEventListener('click', ()=>{
         usersNotification.style.display = none;
     }
 })
-
-
-
-
-
 
 
 // Checkbox
@@ -88,14 +76,3 @@ function mychecked(){
 
 
 
-// function checkme(){
-//     for(let i = 0; i < circles; i++){
-//         if(circles[i].checked){
-//             console.log("success")
-//             // width += checkListProgressInterval;
-//             // console.log(width)
-//         }
-//     }
-
-//     skill_bar.style.width = `${width}%`
-// }

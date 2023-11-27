@@ -103,20 +103,18 @@ nav{
     display: flex;
     align-items: center;
 }
-.user #icon img:hover{
+.user #icon #bell:hover{
     background: #616161;
 }
 
-.user #icon:focus > img{
+.user #icon:focus > #bell{
     background: #656266;
     box-shadow: 0px 0px 0px 3px #005BD3, 0px 0px 0px 1px #000;
 }
 
-.user img{
+.user #bell{
     background: var(--input-bg);
     padding: 10px;
-    width: 17px;
-    height: 17px;
     border-radius: 8px;
 }
 #user_details{
@@ -250,10 +248,10 @@ button #green{
     background: #fff;
     display: flex;
     align-items: center;
-    transition: 0.6s ease-in-out;
 }
 #main_details summary{
     list-style: none;
+    transition: 500ms all ease ;
     position: relative;
     cursor: pointer;
     /* border: 1px solid; */
@@ -618,6 +616,7 @@ ul a li:active{
 /* Notification */
 #bell{
     cursor: pointer;
+    color: #fff;
 }
 .notification{
     border: 1px solid #DBDBDB;
